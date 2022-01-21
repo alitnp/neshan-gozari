@@ -1,6 +1,6 @@
 import routes from 'utils/constants/routes';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 import endpoints from 'utils/constants/endpoints';
@@ -11,10 +11,22 @@ import { handleRefreshToken } from 'redux/middlewares/user/handleRefreshToken';
 const Layout = ({ children }) => {
 	//states
 	const { isLoggedIn } = useSelector((state) => state.user);
+	const [publicRoute, setPublicRoute] = useState(false);
 
 	//hooks
 	const router = useRouter();
 	const dispatch = useDispatch();
+
+	//effects
+	useEffect(() => {
+		if (
+			router.route === routes.login ||
+			router.route === routes.register ||
+			router.route === routes.forgetPassword
+		)
+			setPublicRoute(true);
+		else setPublicRoute(false);
+	}, [router.route, publicRoute]);
 
 	//effects
 	useEffect(() => {
@@ -56,7 +68,8 @@ const Layout = ({ children }) => {
 		if (token && (!isLoggedIn || !userInfo)) {
 			dispatch(getUserInfo(pushToLoginPage));
 		}
-	}, [isLoggedIn, router.route]);
+		if (!token && !publicRoute) pushToLoginPage();
+	}, [isLoggedIn, router.route, publicRoute]);
 	useEffect(() => {
 		const timer = setInterval(checkTokenValidity, 60000);
 		return () => {
@@ -70,12 +83,7 @@ const Layout = ({ children }) => {
 		const tokenFetchTime = localStorage.getItem('tokenFetchTime');
 		const token = localStorage.getItem('token');
 
-		if (
-			(!tokenFetchTime || !token) &&
-			router.route !== routes.login &&
-			router.route !== routes.register &&
-			router.route !== routes.forgetPassword
-		) {
+		if ((!tokenFetchTime || !token) && !publicRoute) {
 			return dispatch(handleLogout(pushToLoginPage));
 		}
 
