@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 import endpoints from 'utils/constants/endpoints';
-import CoverLoading from 'components/global/coverLoading/CoverLoading';
 import { getUserInfo } from 'redux/middlewares/user/getUserInfo';
 import { handleLogout } from 'redux/middlewares/user/handleLogout';
 import { handleRefreshToken } from 'redux/middlewares/user/handleRefreshToken';
@@ -12,7 +11,6 @@ import { handleRefreshToken } from 'redux/middlewares/user/handleRefreshToken';
 const Layout = ({ children }) => {
 	//states
 	const { isLoggedIn } = useSelector((state) => state.user);
-	const { loading } = useSelector((state) => state.global);
 
 	//hooks
 	const router = useRouter();

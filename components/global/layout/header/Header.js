@@ -18,7 +18,7 @@ const Header = () => {
 	const login = () => router.push(routes.login);
 
 	return (
-		<div className='flex items-center justify-between w-11/12 w-full px-6 py-2 mx-auto mt-2 mb-4 bg-white border rounded-md shadow-md'>
+		<div className='flex items-center justify-between w-full px-6 py-2 mx-auto mt-2 mb-4 bg-white border rounded-md shadow-md'>
 			{/* <img src='' alt='logo' className='object-contain object-right h-8' />
 			 */}
 			<h1 className='m-0 font-bold'>سامانه نشان گذاری</h1>
