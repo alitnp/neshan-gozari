@@ -1,4 +1,4 @@
-import { Form, Input, Radio } from 'antd';
+import { Form, Input } from 'antd';
 import FormButtonWrapper from 'components/global/formButtonWrapper/FormButtonWrapper';
 import FormWrapper from 'components/global/formWrapper/FormWrapper';
 import MyButton from 'components/UI/myButton/MyButton';

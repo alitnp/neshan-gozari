@@ -10,16 +10,9 @@ import Content from 'components/global/layout/content/Content';
 import Sidebar from 'components/global/layout/sidebar/Sidebar';
 import { Provider as ReduxProvider } from 'react-redux';
 import { store } from 'redux/store';
-import axios from 'axios';
-import endpoints from 'utils/constants/endpoints';
-import { useEffect } from 'react';
 import { ToastContainer } from 'react-toastify';
-import { handleLogout } from 'redux/middlewares/user/handleLogout';
-import { useDispatch } from 'react-redux';
 
 function MyApp({ Component, pageProps }) {
-
-
 	return (
 		<>
 			<Head>

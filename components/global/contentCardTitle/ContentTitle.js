@@ -1,5 +1,5 @@
-import { Loading3QuartersOutlined } from '@ant-design/icons';
 import Loading from 'components/global/loading/Loading';
+import MyButton from 'components/UI/myButton/MyButton';
 import Link from 'next/link';
 
 const ContentTitle = ({
@@ -31,10 +31,10 @@ const ContentTitle = ({
 			)) ||
 				(to && (
 					<Link to={to}>
-						<TcButton>{buttonText}</TcButton>
+						<MyButton>{buttonText}</MyButton>
 					</Link>
 				)) ||
-				(onClick && <TcButton onClick={onClick}>{buttonText}</TcButton>)}
+				(onClick && <MyButton onClick={onClick}>{buttonText}</MyButton>)}
 		</div>
 	);
 };

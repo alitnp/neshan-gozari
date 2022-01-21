@@ -1,4 +1,4 @@
-import { Form, Input, Select, Upload, Icon } from 'antd';
+import { Form, Input, Select, Upload } from 'antd';
 import FormButtonWrapper from 'components/global/formButtonWrapper/FormButtonWrapper';
 import FormWrapper from 'components/global/formWrapper/FormWrapper';
 import MyButton from 'components/UI/myButton/MyButton';
@@ -22,7 +22,7 @@ const NewTicket = () => {
 	const dispatch = useDispatch();
 
 	//functions
-	const handleChange = (value, values) => {};
+	const handleChange = () => {};
 	const handleSubmit = (values) => {
 		console.log(values);
 		const formData = new FormData();

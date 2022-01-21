@@ -12,7 +12,7 @@ const ApiKeyAndIp = () => {
 			<Title>دریافت API Key و IP های مجاز{loading && <Loading />}</Title>
 			<p className='text-xs'>
 				برای اطلاع از طریقه استفاده از کلید API{' '}
-				<a href='https://doc.sadaf.io/' target='_blank'>
+				<a href='https://doc.sadaf.io/' target='_blank' rel='noreferrer'>
 					کلیک کنید
 				</a>
 				.
