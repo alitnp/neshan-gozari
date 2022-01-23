@@ -20,6 +20,7 @@ const Layout = ({ children }) => {
 	//effects
 	useEffect(() => {
 		if (
+			router.route === routes.home ||
 			router.route === routes.login ||
 			router.route === routes.register ||
 			router.route === routes.forgetPassword

@@ -1,19 +1,25 @@
 const routes = {
+	//home
 	home: '/',
+	about: '/about',
+	contact: '/contact',
+
+	//dashboard
+	dashboard: '/dashboard',
 
 	//user
-	login: '/login',
-	register: '/register',
-	forgetPassword: '/forget',
+	login: '/dashboard/login',
+	register: '/dashboard/register',
+	forgetPassword: '/dashboard/forget',
 
 	//report
-	report: '/report',
+	report: '/dashboard/report',
 
 	//ticker
-	ticket: '/ticket',
+	ticket: '/dashboard/ticket',
 
 	//password
-	password: '/password',
+	password: '/dashboard/password',
 };
 
 export default routes;

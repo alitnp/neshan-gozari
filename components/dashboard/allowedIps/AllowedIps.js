@@ -1,5 +1,5 @@
-import AddNewIps from 'components/home/allowedIps/AddNewIp';
-import IpsList from 'components/home/allowedIps/IpsList';
+import AddNewIps from 'components/dashboard/allowedIps/AddNewIp';
+import IpsList from 'components/dashboard/allowedIps/IpsList';
 import Title from 'components/UI/title/Title';
 import { useSelector } from 'react-redux';
 

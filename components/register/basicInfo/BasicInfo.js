@@ -25,7 +25,7 @@ const BasicInfo = ({ next }) => {
 
 	//effects
 	useEffect(() => {
-		isLoggedIn && router.push(routes.home);
+		isLoggedIn && router.push(routes.dashboard);
 	}, [isLoggedIn]);
 
 	//functions

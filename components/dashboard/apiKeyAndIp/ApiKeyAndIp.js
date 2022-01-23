@@ -1,6 +1,6 @@
 import Loading from 'components/global/loading/Loading';
-import AddWebAddress from 'components/home/apiKeyAndIp/AddWebAddress';
-import ApiKeysList from 'components/home/apiKeyAndIp/ApiKeysList';
+import AddWebAddress from 'components/dashboard/apiKeyAndIp/AddWebAddress';
+import ApiKeysList from 'components/dashboard/apiKeyAndIp/ApiKeysList';
 import Title from 'components/UI/title/Title';
 import { useSelector } from 'react-redux';
 

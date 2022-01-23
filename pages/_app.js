@@ -8,11 +8,20 @@ import 'react-toastify/dist/ReactToastify.css';
 import Layout from 'components/global/layout/Layout';
 import Content from 'components/global/layout/content/Content';
 import Sidebar from 'components/global/layout/sidebar/Sidebar';
+import Navbar from 'components/home/navbar/Navbar';
 import { Provider as ReduxProvider } from 'react-redux';
 import { store } from 'redux/store';
 import { ToastContainer } from 'react-toastify';
+import { useRouter } from 'next/router';
+import routes from 'utils/constants/routes';
+import Footer from 'components/home/footer/Footer';
+import Header from 'components/home/header/Header';
 
 function MyApp({ Component, pageProps }) {
+	//hooks
+	const { route } = useRouter();
+	console.log(route);
+
 	return (
 		<>
 			<Head>
@@ -58,12 +67,22 @@ function MyApp({ Component, pageProps }) {
 			</Head>
 			<ReduxProvider store={store}>
 				<ConfigProvider local={faIR} direction='rtl'>
-					<Layout>
-						<Sidebar />
-						<Content>
+					{route.startsWith(routes.dashboard) && (
+						<Layout>
+							<Sidebar />
+							<Content>
+								<Component {...pageProps} />
+							</Content>
+						</Layout>
+					)}
+					{!route.startsWith(routes.dashboard) && (
+						<>
+							<Navbar />
+							<Header />
 							<Component {...pageProps} />
-						</Content>
-					</Layout>
+							<Footer />
+						</>
+					)}
 				</ConfigProvider>
 				<ToastContainer rtl position='top-right' pauseOnFocusLoss={false} />
 			</ReduxProvider>

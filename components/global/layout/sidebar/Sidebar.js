@@ -33,9 +33,15 @@ const Sidebar = () => {
 				style={{ height: 'calc(100% - 16px)' }}
 			>
 				<Menu
-					name='داشبورد'
+					name='خانه'
 					icon={<HomeOutlined />}
 					to={routes.home}
+					open={open}
+				/>
+				<Menu
+					name='داشبورد'
+					icon={<HomeOutlined />}
+					to={routes.dashboard}
 					open={open}
 				/>
 				<Menu
