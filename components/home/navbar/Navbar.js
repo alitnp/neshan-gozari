@@ -8,7 +8,7 @@ import routes from 'utils/constants/routes';
 
 const Navbar = () => {
 	const { route } = useRouter();
-	const [open, setOpen] = useState(true);
+	const [open, setOpen] = useState(false);
 
 	useEffect(() => {
 		setOpen(false);
