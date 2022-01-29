@@ -4,21 +4,21 @@ import routes from 'utils/constants/routes';
 
 const Header = () => {
 	return (
-		<header className=' h-[400px] relative'>
+		<header className=' h-[280px] relative'>
 			<Image src='/image/cyber.jpg' layout='fill' objectFit='cover' />
 			<div className='absolute top-0 left-0 w-full h-full bg-slate-700/40'>
-				<div className='flex flex-col pt-10 items-center justify-center w-full h-full'>
-					<h1 className='font-bold text-white text-4xl mb-10'>
+				<div className='flex flex-col items-center justify-center w-full h-full '>
+					<h1 className='mb-10 text-4xl font-bold text-white'>
 						سامانه مرجع نشان گذاری محتوا
 					</h1>
 					<div className='flex gap-x-4'>
 						<Link href={routes.dashboard}>
-							<div className='bg-sky-600 text-white hover:bg-sky-500 cursor-pointer  px-6 py-2 rounded-md transition-all ease-out duration-150'>
+							<div className='px-6 py-2 text-white transition-all duration-150 ease-out rounded-md cursor-pointer bg-sky-600 hover:bg-sky-500'>
 								ورود / ثبت نام بسترهای نشر
 							</div>
 						</Link>
 						<Link href={routes.about}>
-							<div className='bg-white hover:bg-gray-100 cursor-pointer px-6 py-2 rounded-md transition-all ease-out duration-150'>
+							<div className='px-6 py-2 transition-all duration-150 ease-out bg-white rounded-md cursor-pointer hover:bg-gray-100'>
 								درباره ما
 							</div>
 						</Link>

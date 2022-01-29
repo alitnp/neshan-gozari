@@ -3,6 +3,8 @@ const routes = {
 	home: '/',
 	about: '/about',
 	contact: '/contact',
+	rules: '/rules',
+	guide: '/guide',
 
 	//dashboard
 	dashboard: '/dashboard',
