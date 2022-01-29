@@ -29,7 +29,7 @@ const Navbar = () => {
 				<ul className='flex items-center mb-0'>
 					<Link href={routes.home}>
 						<li
-							className={`px-6 py-3 text-white cursor-pointer  hover:bg-sky-800 ${
+							className={`px-6 py-3 text-white cursor-pointer flex items-center gap-x-2  hover:bg-sky-800 ${
 								route === routes.home && 'bg-sky-900 flex items-center gap-x-2'
 							}`}
 						>

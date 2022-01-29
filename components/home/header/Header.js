@@ -8,8 +8,8 @@ const Header = () => {
 			<Image src='/image/cyber.jpg' layout='fill' objectFit='cover' />
 			<div className='absolute top-0 left-0 w-full h-full bg-slate-700/40'>
 				<div className='flex flex-col items-center justify-center w-full h-full '>
-					<h1 className='mb-10 text-4xl font-bold text-white'>
-						سامانه مرجع نشان گذاری محتوا
+					<h1 className='mb-10 text-3xl w-[40ch] leading-loose font-bold text-white text-center mx-6'>
+						سامانه مرجع نشان گذاری داده های فرهنگی و هنری در فضای مجازی
 					</h1>
 					<div className='flex gap-x-4'>
 						<Link href={routes.dashboard}>
