@@ -32,9 +32,11 @@ const Footer = () => {
 					</div>
 					<div className=''>
 						<h4 className='border-b border-gray-400 pb-2'>راه های ارتباطی</h4>
-						<p className='mb-0'>۳۴۵۶۷۸۹ - ۰۲۱</p>
+						<p className='mb-0'>33966034 - 33966037</p>
 						<p className='mb-0'>info@neshangozari.ir</p>
-						<p className='mb-0'>تهران - ميدان بهارستان ، خيابان كمال الملك</p>
+						<p className='mb-0'>
+							م بهارستان , خ کمال الملک , ساختمان مرکزی , ط 3
+						</p>
 					</div>
 				</div>
 			</Container>

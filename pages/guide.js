@@ -2,7 +2,6 @@ import Article from 'components/guide/Article';
 import CodesTable from 'components/guide/CodesTable';
 import DownloadButton from 'components/guide/DownloadButton';
 import Element from 'components/guide/Element';
-import H1 from 'components/guide/H1';
 import H2 from 'components/guide/H2';
 import H3 from 'components/guide/H3';
 import H4 from 'components/guide/H4';
