@@ -1,8 +1,10 @@
 const RowTitleText = ({ title, text }) => {
 	return (
 		<div className='mb-4'>
-			<span className='inline-block ml-4 font-medium'>{title + ' : '}</span>
-			<span className='inline-block'>{text}</span>
+			<p className=' ml-4 font-medium'>{title + ' : '}</p>
+			<p className=' max-w-[30ch] sm:max-w-[100ch] break-inside-auto break-words'>
+				{text}
+			</p>
 		</div>
 	);
 };

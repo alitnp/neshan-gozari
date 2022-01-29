@@ -39,7 +39,7 @@ const headings = [
 const GuidePage = () => {
 	return (
 		<Container>
-			<div className='mt-16'>
+			<div className='mt-16 '>
 				<Link href={routes.home}>
 					<p className='flex items-center cursor-pointer gap-x-2'>
 						<BsArrowRight />

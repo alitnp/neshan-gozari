@@ -10,7 +10,7 @@ const Ershad = () => {
 						src='/image/ershad2.png'
 						className='w-full h-40 object-contain drop-shadow-md'
 					/>
-					<h3 className='text-white mt-4 font-bold text-lg'>
+					<h3 className='text-white text-center mt-4 font-bold text-lg'>
 						تحت نظر وزارت ارشاد جمهوری اسلامی
 					</h3>
 					<p className='text-white text-center max-w-[75ch]'>
