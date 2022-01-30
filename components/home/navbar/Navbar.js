@@ -17,7 +17,17 @@ const Navbar = () => {
 	return (
 		<nav className='z-50 w-full bg-white border-gray-200 shadow-md '>
 			<div className='flex items-center justify-between px-2 sm:px-4 '>
-				<h3 className='mb-0 text-lg font-bold'>سامانه مرجع نشان گذاری</h3>
+				<div className='flex gap-x-3 items-center'>
+					<div className='relative '>
+						<Image
+							src='/image/samandehi.svg'
+							width='32px'
+							height='40px'
+							objectFit='contain'
+						/>
+					</div>
+					<h3 className='mb-0 text-lg font-bold'>سامانه مرجع نشان گذاری</h3>
+				</div>
 				<div className='hidden sm:block'>
 					<Image
 						src='/image/navbarimage.png'

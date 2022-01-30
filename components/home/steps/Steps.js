@@ -31,6 +31,7 @@ const data = [
 ];
 
 const Steps = () => {
+	return null;
 	return (
 		<div className='flex flex-col md:flex-row gap-4 mt-20'>
 			{data.map((item) => (
