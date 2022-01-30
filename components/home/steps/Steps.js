@@ -32,18 +32,18 @@ const data = [
 
 const Steps = () => {
 	return null;
-	return (
-		<div className='flex flex-col md:flex-row gap-4 mt-20'>
-			{data.map((item) => (
-				<Step
-					key={item.step}
-					step={item.step}
-					title={item.title}
-					text={item.text}
-				/>
-			))}
-		</div>
-	);
+	// return (
+	// 	<div className='flex flex-col gap-4 mt-20 md:flex-row'>
+	// 		{data.map((item) => (
+	// 			<Step
+	// 				key={item.step}
+	// 				step={item.step}
+	// 				title={item.title}
+	// 				text={item.text}
+	// 			/>
+	// 		))}
+	// 	</div>
+	// );
 };
 
 export default Steps;
