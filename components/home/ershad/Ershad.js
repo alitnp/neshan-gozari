@@ -5,13 +5,13 @@ const Ershad = () => {
 		<div className='mt-20 h-[500px] relative bg-sky-900'>
 			<Image src='/image/article2.jpg' layout='fill' objectFit='cover' />
 			<div className='absolute top-0 left-0 w-full h-full bg-gray-800/70 sm:bg-gray-800/50'>
-				<div className='w-full sm:w-1/2 py-6 flex flex-col justify-center h-full items-center px-4'>
+				<div className='flex flex-col items-center justify-center w-full h-full px-4 py-6 sm:w-1/2'>
 					<img
 						src='/image/ershad2.png'
-						className='w-full h-40 object-contain drop-shadow-md'
+						className='object-contain w-full h-40 drop-shadow-md'
 					/>
-					<h3 className='text-white text-center mt-4 font-bold text-lg'>
-						تحت نظر وزارت ارشاد جمهوری اسلامی
+					<h3 className='mt-4 text-lg font-bold text-center text-white'>
+					
 					</h3>
 					<p className='text-white text-center max-w-[75ch]'>
 						هدف نهایی سامانه امکان ثبت بین المللی شناسه آثار، کسب درآمد از
